@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SEOKUB
 
-## Getting Started
+SEO audit & suggestion SaaS — a lighter alternative to Ahrefs, Semrush, SE Ranking, Ubersuggest and Moz Pro.
 
-First, run the development server:
+## Features
+
+- **20+ on-page SEO checks** — title, meta description, H1, heading hierarchy, image alt text, canonical, robots, Open Graph, Twitter Cards, JSON-LD structured data, viewport, HTTPS, HTML lang, content depth, internal linking, favicon, sitemap, broken-link sampling, URL length, URL params, server speed (TTFB)
+- **0–100 health score** with prioritized, plain-English recommendations
+- **Google sign-in** (NextAuth, database sessions)
+- **8 markets**: English, Thai, Hindi, Indonesian, Arabic (RTL), Spanish, French, Portuguese, Vietnamese
+- **Security**: CSP + security headers, CSRF protection (NextAuth), per-user rate limiting, dependency audit in CI
+
+## Stack
+
+- Next.js 14 (App Router) + TypeScript
+- NextAuth v4 (Google provider) + Prisma (SQLite for dev, switch to PostgreSQL for prod)
+- next-intl for i18n
+- Tailwind CSS (lime green theme)
+- cheerio for server-side HTML analysis
+
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cp .env.example .env.local
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Fill in:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `NEXTAUTH_SECRET` — random string (`openssl rand -base64 32`)
+- `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` — from [Google Cloud Console](https://console.cloud.google.com/apis/credentials) (Authorized redirect URI: `http://localhost:3000/api/auth/callback/google`)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Then:
 
-## Learn More
+```bash
+npm install
+npx prisma db push
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open http://localhost:3000 — the middleware redirects to your locale (default English).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## API
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Method | Endpoint | Description |
+| ------ | -------- | ----------- |
+| POST | `/api/audits` | Run an audit `{ "url": "https://example.com" }` (rate-limited: 5/min per user) |
+| GET | `/api/audits` | List the signed-in user's audits |
+| GET | `/api/audits/:id` | Get a single audit report |
 
-## Deploy on Vercel
+All endpoints require a valid session.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+  app/
+    [locale]/           # localized pages (en, th, hi, id, ar, es, fr, pt, vi)
+      login/            # Google sign-in
+      dashboard/        # protected audit list + stats
+      audit/new/        # audit form
+      audit/[id]/       # report view
+    api/
+      auth/[...nextauth]/
+      audits/           # POST + GET
+      audits/[id]/      # GET
+  components/           # Header, Footer, forms, report client
+  lib/
+    audit.ts            # crawler + 20+ checks engine
+    auth.ts             # NextAuth config (Google provider)
+    prisma.ts           # Prisma client singleton
+    rateLimit.ts        # in-memory per-user limiter
+  i18n/                 # routing, navigation, middleware wiring
+messages/               # 9 locale dictionaries
+prisma/schema.prisma    # User/Account/Session (NextAuth) + Audit
+```
+
+## Production checklist
+
+- [ ] Replace SQLite with PostgreSQL (`provider = "postgresql"` in schema + `DATABASE_URL`)
+- [ ] Set `NEXTAUTH_URL` to https://seokub.com
+- [ ] Add Google Search Console API for real ranking data (keyword positions, impressions)
+- [ ] Add recurring audits + email reports (cron queue)
+- [ ] Deploy on Vercel (zero-config for Next.js)
