@@ -9,6 +9,15 @@ export async function generateMetadata(): Promise<Metadata> {
     title: "SEOKUB — SEO Audits Without the Bloat",
     description:
       "Know exactly why your site isn't ranking. 20+ on-page SEO checks, broken-link sampling and prioritized fixes in under 30 seconds.",
+    alternates: { canonical: "https://seokub.com" },
+    openGraph: {
+      title: "SEOKUB — SEO Audits Without the Bloat",
+      description:
+        "Know exactly why your site isn't ranking. 20+ on-page SEO checks, broken-link sampling and prioritized fixes in under 30 seconds.",
+      url: "https://seokub.com",
+      siteName: "SEOKUB",
+      type: "website",
+    },
   };
 }
 

@@ -46,7 +46,11 @@
     "title": "Bem-vindo de volta",
     "subtitle": "Entre na sua conta SEOKUB",
     "google": "Continuar com Google",
-    "terms": "Ao entrar, você concorda com nossos Termos e Política de Privacidade."
+    "terms": "Ao entrar, você concorda com nossos Termos e Política de Privacidade.",
+    "devTitle": "Acesso de desenvolvimento",
+    "devPlaceholder": "you@example.com",
+    "devButton": "Entrar (dev)",
+    "devError": "Insira um e-mail válido."
   },
   "dashboard": {
     "hi": "Bem-vindo de volta",

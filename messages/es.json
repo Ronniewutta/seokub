@@ -46,7 +46,11 @@
     "title": "Bienvenido de nuevo",
     "subtitle": "Inicia sesión en tu cuenta de SEOKUB",
     "google": "Continuar con Google",
-    "terms": "Al iniciar sesión aceptas nuestros Términos y Política de Privacidad."
+    "terms": "Al iniciar sesión aceptas nuestros Términos y Política de Privacidad.",
+    "devTitle": "Acceso de desarrollo",
+    "devPlaceholder": "you@example.com",
+    "devButton": "Entrar (dev)",
+    "devError": "Introduce un correo electrónico válido."
   },
   "dashboard": {
     "hi": "Bienvenido de nuevo",

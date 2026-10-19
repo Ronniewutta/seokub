@@ -39,6 +39,8 @@ npm run dev
 
 Open http://localhost:3000 — the middleware redirects to your locale (default English).
 
+**Dev login:** in development (or when `ENABLE_DEV_LOGIN=true`), the login page shows a "Development access" form — enter any email to sign in without Google OAuth. This is automatically disabled in production.
+
 ## API
 
 | Method | Endpoint | Description |

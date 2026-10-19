@@ -46,7 +46,11 @@
     "title": "Chào mừng bạn quay lại",
     "subtitle": "Đăng nhập vào tài khoản SEOKUB của bạn",
     "google": "Tiếp tục với Google",
-    "terms": "Bằng việc đăng nhập, bạn đồng ý với Điều khoản và Chính sách bảo mật của chúng tôi."
+    "terms": "Bằng việc đăng nhập, bạn đồng ý với Điều khoản và Chính sách bảo mật của chúng tôi.",
+    "devTitle": "Truy cập nhà phát triển",
+    "devPlaceholder": "you@example.com",
+    "devButton": "Đăng nhập (dev)",
+    "devError": "Vui lòng nhập địa chỉ email hợp lệ."
   },
   "dashboard": {
     "hi": "Chào mừng bạn quay lại",

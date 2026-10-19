@@ -46,7 +46,11 @@
     "title": "Bon retour",
     "subtitle": "Connectez-vous à votre compte SEOKUB",
     "google": "Continuer avec Google",
-    "terms": "En vous connectant, vous acceptez nos Conditions et notre Politique de confidentialité."
+    "terms": "En vous connectant, vous acceptez nos Conditions et notre Politique de confidentialité.",
+    "devTitle": "Accès développeur",
+    "devPlaceholder": "you@example.com",
+    "devButton": "Se connecter (dev)",
+    "devError": "Veuillez saisir une adresse e-mail valide."
   },
   "dashboard": {
     "hi": "Bon retour",

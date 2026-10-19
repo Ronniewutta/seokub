@@ -1,6 +1,8 @@
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import SignInButton from "@/components/SignInButton";
+import DevLoginForm from "@/components/DevLoginForm";
+import { isDevLoginEnabled } from "@/lib/auth";
 
 export default async function LoginPage({
   params,
@@ -30,6 +32,7 @@ export default async function LoginPage({
             className="w-full py-3"
           />
         </div>
+        {isDevLoginEnabled && <DevLoginForm callbackUrl="/dashboard" />}
         <p className="mt-6 text-center text-xs leading-relaxed text-zinc-600">
           {t("terms")}
         </p>

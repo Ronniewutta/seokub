@@ -46,7 +46,11 @@
     "title": "Welcome back",
     "subtitle": "Sign in to your SEOKUB account",
     "google": "Continue with Google",
-    "terms": "By signing in you agree to our Terms and Privacy Policy."
+    "terms": "By signing in you agree to our Terms and Privacy Policy.",
+    "devTitle": "Development access",
+    "devPlaceholder": "you@example.com",
+    "devButton": "Sign in (dev)",
+    "devError": "Please enter a valid email address."
   },
   "dashboard": {
     "hi": "Welcome back",

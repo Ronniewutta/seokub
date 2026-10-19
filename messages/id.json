@@ -46,7 +46,11 @@
     "title": "Selamat datang kembali",
     "subtitle": "Masuk ke akun SEOKUB Anda",
     "google": "Lanjutkan dengan Google",
-    "terms": "Dengan masuk, Anda menyetujui Syarat dan Kebijakan Privasi kami."
+    "terms": "Dengan masuk, Anda menyetujui Syarat dan Kebijakan Privasi kami.",
+    "devTitle": "Akses pengembang",
+    "devPlaceholder": "you@example.com",
+    "devButton": "Masuk (dev)",
+    "devError": "Masukkan alamat email yang valid."
   },
   "dashboard": {
     "hi": "Selamat datang kembali",
