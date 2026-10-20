@@ -120,6 +120,89 @@
     "urlParams": "Tham số URL",
     "ttfb": "Tốc độ máy chủ (TTFB)"
   },
+  "pricing": {
+    "kicker": "Bảng giá",
+    "title": "Bắt đầu miễn phí. Nâng cấp khi trưởng thành.",
+    "subtitle": "Không cần thẻ tín dụng. Hủy bất cứ lúc nào.",
+    "monthly": "Hàng tháng",
+    "yearly": "Hàng năm",
+    "save": "Tiết kiệm 20%",
+    "perMonth": "/tháng",
+    "billedAnnually": "thanh toán hàng năm",
+    "mostPopular": "Phổ biến nhất",
+    "plans": {
+      "free": {
+        "name": "Miễn phí",
+        "tagline": "Để thử SEOKUB",
+        "monthly": 0,
+        "yearly": 0,
+        "cta": "Bắt đầu miễn phí",
+        "features": [
+          "5 lần kiểm tra mỗi tháng",
+          "20+ kiểm tra SEO on-page",
+          "Điểm sức khỏe & khắc phục ưu tiên",
+          "1 dự án",
+          "Hỗ trợ cộng đồng"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "tagline": "Cho các trang phát triển",
+        "monthly": 29,
+        "yearly": 24,
+        "cta": "Đăng ký Pro",
+        "features": [
+          "Kiểm tra không giới hạn",
+          "Được ưu tiên kiểm tra lại",
+          "Theo dõi từ khóa",
+          "Dữ liệu Google Search Console",
+          "Báo cáo PDF",
+          "10 dự án"
+        ]
+      },
+      "agency": {
+        "name": "Doanh nghiệp",
+        "tagline": "Cho đội nhóm & khách hàng",
+        "monthly": 99,
+        "yearly": 79,
+        "cta": "Liên hệ bộ phận kinh doanh",
+        "features": [
+          "Mọi thứ của Pro",
+          "Báo cáo white-label",
+          "Quyền truy cập API",
+          "5 ghế thành viên",
+          "100 dự án",
+          "Hỗ trợ ưu tiên"
+        ]
+      }
+    },
+    "faq": {
+      "kicker": "Hỏi đáp",
+      "title": "Câu hỏi, câu trả lời",
+      "items": [
+        {
+          "q": "SEOKUB khác Ahrefs hoặc Semrush như thế nào?",
+          "a": "SEOKUB tập trung vào một việc: cho bạn biết chính xác cần sửa gì trên trang của mình, bằng ngôn ngữ rõ ràng, với thứ tự ưu tiên cụ thể. Không có bảng điều khiển phức tạp, không có giá doanh nghiệp — bạn nhận được báo cáo thực thi được trong vài giây, không phải công cụ 40 tab cần khóa học để dùng."
+        },
+        {
+          "q": "Tôi có cần cài đặt gì không?",
+          "a": "Không. SEOKUB hoàn toàn dựa trên web. Dán một URL và chúng tôi tìm nạp và phân tích trang của bạn từ máy chủ của chúng tôi — không cần plugin, script hay thay đổi DNS."
+        },
+        {
+          "q": "Điểm sức khỏe chính xác tới mức nào?",
+          "a": "Điểm là tổng trọng số của hơn 20 kiểm tra dựa trên hướng dẫn on-page và kỹ thuật được Google ghi nhận. Nó được thiết kế để hiển thị các vấn đề có tác động lớn nhất trước, không phải một chỉ số khoa học hoàn hảo."
+        },
+        {
+          "q": "Tôi có thể hủy bất cứ lúc nào không?",
+          "a": "Có. Không có hợp đồng hay phí hủy. Hạ cấp về Miễn phí vào cuối chu kỳ thanh toán và giữ lại các báo cáo trước đây."
+        },
+        {
+          "q": "Những ngôn ngữ nào được hỗ trợ?",
+          "a": "SEOKUB được bản địa hóa đầy đủ cho 9 thị trường: tiếng Anh, Thái, Hindi, Indonesia, Ả Rập, Tây Ban Nha, Pháp, Bồ Đào Nha và Việt — kèm phát hiện ngôn ngữ tự động."
+        }
+      ]
+    }
+  },
   "status": {
     "pass": "Đạt",
     "warn": "Cảnh báo",

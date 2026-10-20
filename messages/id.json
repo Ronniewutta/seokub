@@ -120,6 +120,89 @@
     "urlParams": "Parameter URL",
     "ttfb": "Kecepatan server (TTFB)"
   },
+  "pricing": {
+    "kicker": "Harga",
+    "title": "Mulai gratis. Upgrade saat siap.",
+    "subtitle": "Tanpa kartu kredit. Batalkan kapan saja.",
+    "monthly": "Bulanan",
+    "yearly": "Tahunan",
+    "save": "Hemat 20%",
+    "perMonth": "/bulan",
+    "billedAnnually": "ditagih tahunan",
+    "mostPopular": "Paling populer",
+    "plans": {
+      "free": {
+        "name": "Gratis",
+        "tagline": "Untuk mencoba SEOKUB",
+        "monthly": 0,
+        "yearly": 0,
+        "cta": "Mulai gratis",
+        "features": [
+          "5 audit per bulan",
+          "20+ pemeriksaan SEO on-page",
+          "Skor kesehatan & perbaikan prioritas",
+          "1 proyek",
+          "Dukungan komunitas"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "tagline": "Untuk situs yang berkembang",
+        "monthly": 29,
+        "yearly": 24,
+        "cta": "Ambil Pro",
+        "features": [
+          "Audit tanpa batas",
+          "Pemeriksaan ulang prioritas",
+          "Pelacakan kata kunci",
+          "Data Google Search Console",
+          "Laporan PDF",
+          "10 proyek"
+        ]
+      },
+      "agency": {
+        "name": "Agensi",
+        "tagline": "Untuk tim & klien",
+        "monthly": 99,
+        "yearly": 79,
+        "cta": "Hubungi penjualan",
+        "features": [
+          "Semua di Pro",
+          "Laporan white-label",
+          "Akses API",
+          "5 kursi tim",
+          "100 proyek",
+          "Dukungan prioritas"
+        ]
+      }
+    },
+    "faq": {
+      "kicker": "FAQ",
+      "title": "Tanya jawab",
+      "items": [
+        {
+          "q": "Apa bedanya SEOKUB dengan Ahrefs atau Semrush?",
+          "a": "SEOKUB fokus pada satu hal: memberi tahu Anda persis apa yang harus diperbaiki di halaman Anda sendiri, dalam bahasa yang jelas, dengan urutan prioritas yang lugas. Tanpa dasbor yang rumit, tanpa harga perusahaan — Anda mendapat laporan yang dapat ditindaklanjuti dalam hitungan detik, bukan alat 40 tab yang butuh kursus untuk dipakai."
+        },
+        {
+          "q": "Apakah perlu menginstal sesuatu?",
+          "a": "Tidak. SEOKUB sepenuhnya berbasis web. Tempelkan URL dan kami mengambil serta menganalisis halaman Anda dari server kami — tanpa plugin, skrip, atau perubahan DNS."
+        },
+        {
+          "q": "Seberapa akurat skor kesehatan?",
+          "a": "Skor adalah jumlah tertimbang dari 20+ pemeriksaan berdasarkan panduan on-page dan teknis Google yang terdokumentasi. Dirancang untuk menampilkan masalah berdampak terbesar terlebih dahulu, bukan metrik ilmiah yang sempurna."
+        },
+        {
+          "q": "Bisakah saya membatalkan kapan saja?",
+          "a": "Ya. Tidak ada kontrak dan biaya pembatalan. Turunkan ke Gratis di akhir periode penagihan dan simpan laporan historis Anda."
+        },
+        {
+          "q": "Bahasa apa saja yang didukung?",
+          "a": "SEOKUB sepenuhnya dilokalkan untuk 9 pasar: Inggris, Thailand, Hindi, Indonesia, Arab, Spanyol, Prancis, Portugis, dan Vietnam — dengan deteksi bahasa otomatis."
+        }
+      ]
+    }
+  },
   "status": {
     "pass": "Lulus",
     "warn": "Peringatan",

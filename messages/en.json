@@ -120,6 +120,89 @@
     "urlParams": "URL parameters",
     "ttfb": "Server speed (TTFB)"
   },
+  "pricing": {
+    "kicker": "Pricing",
+    "title": "Start free. Upgrade when you grow.",
+    "subtitle": "No credit card required. Cancel anytime.",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "save": "Save 20%",
+    "perMonth": "/month",
+    "billedAnnually": "billed annually",
+    "mostPopular": "Most popular",
+    "plans": {
+      "free": {
+        "name": "Free",
+        "tagline": "For trying SEOKUB",
+        "monthly": 0,
+        "yearly": 0,
+        "cta": "Start free",
+        "features": [
+          "5 audits per month",
+          "20+ on-page SEO checks",
+          "Health score & prioritized fixes",
+          "1 project",
+          "Community support"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "tagline": "For growing sites",
+        "monthly": 29,
+        "yearly": 24,
+        "cta": "Go Pro",
+        "features": [
+          "Unlimited audits",
+          "Priority re-checks",
+          "Keyword tracking",
+          "Google Search Console data",
+          "PDF reports",
+          "10 projects"
+        ]
+      },
+      "agency": {
+        "name": "Agency",
+        "tagline": "For teams & clients",
+        "monthly": 99,
+        "yearly": 79,
+        "cta": "Contact sales",
+        "features": [
+          "Everything in Pro",
+          "White-label reports",
+          "API access",
+          "5 team seats",
+          "100 projects",
+          "Priority support"
+        ]
+      }
+    },
+    "faq": {
+      "kicker": "FAQ",
+      "title": "Questions, answered",
+      "items": [
+        {
+          "q": "How is SEOKUB different from Ahrefs or Semrush?",
+          "a": "SEOKUB focuses on one thing: telling you exactly what to fix on your own pages, in plain language, with a clear priority order. No bloated dashboards, no enterprise pricing — you get an actionable report in seconds, not a 40-tab tool you need a course to use."
+        },
+        {
+          "q": "Do I need to install anything?",
+          "a": "No. SEOKUB is entirely web-based. Paste a URL and we fetch and analyze your page from our servers — no plugin, script or DNS change required."
+        },
+        {
+          "q": "How accurate is the health score?",
+          "a": "The score is a weighted sum of 20+ checks based on Google's documented on-page and technical guidelines. It is designed to surface the highest-impact issues first, not to be a perfect scientific metric."
+        },
+        {
+          "q": "Can I cancel anytime?",
+          "a": "Yes. There are no contracts and no cancellation fees. Downgrade to Free at the end of your billing period and keep your historical reports."
+        },
+        {
+          "q": "Which languages are supported?",
+          "a": "SEOKUB is fully localized for 9 markets: English, Thai, Hindi, Indonesian, Arabic, Spanish, French, Portuguese and Vietnamese — with automatic language detection."
+        }
+      ]
+    }
+  },
   "status": {
     "pass": "Pass",
     "warn": "Warning",

@@ -120,6 +120,89 @@
     "urlParams": "Parâmetros de URL",
     "ttfb": "Velocidade do servidor (TTFB)"
   },
+  "pricing": {
+    "kicker": "Preços",
+    "title": "Comece grátis. Faça upgrade quando crescer.",
+    "subtitle": "Sem cartão de crédito. Cancele quando quiser.",
+    "monthly": "Mensal",
+    "yearly": "Anual",
+    "save": "Economize 20%",
+    "perMonth": "/mês",
+    "billedAnnually": "cobrado anualmente",
+    "mostPopular": "Mais popular",
+    "plans": {
+      "free": {
+        "name": "Grátis",
+        "tagline": "Para experimentar o SEOKUB",
+        "monthly": 0,
+        "yearly": 0,
+        "cta": "Começar grátis",
+        "features": [
+          "5 auditorias por mês",
+          "20+ verificações de SEO on-page",
+          "Pontuação de saúde e correções priorizadas",
+          "1 projeto",
+          "Suporte da comunidade"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "tagline": "Para sites em crescimento",
+        "monthly": 29,
+        "yearly": 24,
+        "cta": "Assinar Pro",
+        "features": [
+          "Auditorias ilimitadas",
+          "Reverificações prioritárias",
+          "Rastreamento de palavras-chave",
+          "Dados do Google Search Console",
+          "Relatórios em PDF",
+          "10 projetos"
+        ]
+      },
+      "agency": {
+        "name": "Agência",
+        "tagline": "Para equipes e clientes",
+        "monthly": 99,
+        "yearly": 79,
+        "cta": "Falar com vendas",
+        "features": [
+          "Tudo do Pro",
+          "Relatórios white-label",
+          "Acesso à API",
+          "5 assentos de equipe",
+          "100 projetos",
+          "Suporte prioritário"
+        ]
+      }
+    },
+    "faq": {
+      "kicker": "Perguntas frequentes",
+      "title": "Perguntas, respondidas",
+      "items": [
+        {
+          "q": "Como o SEOKUB difere do Ahrefs ou do Semrush?",
+          "a": "O SEOKUB foca em uma coisa: dizer exatamente o que corrigir nas suas próprias páginas, em linguagem clara e com uma ordem de prioridade explícita. Sem painéis cheios de recursos e preços corporativos: você recebe um relatório acionável em segundos, não uma ferramenta de 40 abas que exige um curso para usar."
+        },
+        {
+          "q": "Preciso instalar alguma coisa?",
+          "a": "Não. O SEOKUB é totalmente web. Cole uma URL e buscamos e analisamos sua página dos nossos servidores — sem plugin, script ou alteração de DNS."
+        },
+        {
+          "q": "Qual a precisão da pontuação de saúde?",
+          "a": "A pontuação é uma soma ponderada de mais de 20 verificações baseadas nas diretrizes on-page e técnicas documentadas pelo Google. Ela é projetada para destacar primeiro os problemas de maior impacto, não para ser uma métrica científica perfeita."
+        },
+        {
+          "q": "Posso cancelar a qualquer momento?",
+          "a": "Sim. Sem contratos nem taxas de cancelamento. Volte para o Grátis no fim do ciclo de cobrança e mantenha seus relatórios anteriores."
+        },
+        {
+          "q": "Quais idiomas são suportados?",
+          "a": "O SEOKUB está totalmente localizado para 9 mercados: inglês, tailandês, hindi, indonésio, árabe, espanhol, francês, português e vietnamita — com detecção automática de idioma."
+        }
+      ]
+    }
+  },
   "status": {
     "pass": "Aprovado",
     "warn": "Atenção",

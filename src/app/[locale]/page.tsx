@@ -3,6 +3,8 @@ import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import SignInButton from "@/components/SignInButton";
 import LinkButton from "@/components/LinkButton";
+import PricingSection from "@/components/PricingSection";
+import FaqSection from "@/components/FaqSection";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -117,27 +119,9 @@ export default async function LandingPage({
         </div>
       </section>
 
-      <section
-        id="pricing"
-        className="border-t border-zinc-800/60 py-20"
-      >
-        <div className="mx-auto max-w-4xl rounded-3xl border border-brand-500/30 bg-gradient-to-b from-brand-500/10 to-transparent px-6 py-16 text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-brand-400">
-            {t("ctaKicker")}
-          </p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-zinc-50 sm:text-4xl">
-            {t("ctaTitle")}
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-zinc-400">
-            {t("ctaSubtitle")}
-          </p>
-          <SignInButton
-            label={t("ctaButton")}
-            callbackUrl="/audit/new"
-            className="mt-8 px-8 py-3 text-base"
-          />
-        </div>
-      </section>
+      <PricingSection />
+
+      <FaqSection />
     </div>
   );
 }
