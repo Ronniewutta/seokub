@@ -5,6 +5,9 @@ import { prisma } from "@/lib/prisma";
 import { runAudit } from "@/lib/audit";
 import { rateLimit } from "@/lib/rateLimit";
 
+export const runtime = "nodejs";
+export const maxDuration = 60;
+
 export async function POST(req: NextRequest) {
   const session = await getServerSession(authOptions);
   if (!session?.user?.id) {

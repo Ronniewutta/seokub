@@ -78,8 +78,28 @@ prisma/schema.prisma    # User/Account/Session (NextAuth) + Audit
 
 ## Production checklist
 
-- [ ] Replace SQLite with PostgreSQL (`provider = "postgresql"` in schema + `DATABASE_URL`)
-- [ ] Set `NEXTAUTH_URL` to https://seokub.com
+- [x] Health check: `GET /api/health` (DB ping, 503 on failure)
+- [x] robots.txt + localized sitemap at `/robots.txt` and `/sitemap.xml`
+- [x] Audit API maxDuration set to 60s (Vercel `vercel.json` + route export)
+- [x] Custom logo (`src/app/icon.svg`)
+- [ ] Replace SQLite with PostgreSQL — **required on Vercel** (read-only filesystem). Use [Neon](https://neon.tech) free tier: change `provider = "postgresql"` in `prisma/schema.prisma` and set `DATABASE_URL` to the Neon connection string, then `npx prisma db push`.
+- [ ] Set `NEXTAUTH_URL=https://seokub.com` and `NEXT_PUBLIC_SITE_URL=https://seokub.com`
 - [ ] Add Google Search Console API for real ranking data (keyword positions, impressions)
 - [ ] Add recurring audits + email reports (cron queue)
-- [ ] Deploy on Vercel (zero-config for Next.js)
+
+## Deploy on Vercel
+
+1. Push to GitHub (done), then import the repo at [vercel.com/new](https://vercel.com/new)
+2. Add environment variables in Project → Settings → Environment Variables:
+   - `NEXTAUTH_URL` = `https://seokub.com`
+   - `NEXTAUTH_SECRET` = a long random string
+   - `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` = from Google Cloud Console
+   - `DATABASE_URL` = PostgreSQL connection string (Neon recommended)
+   - `NEXT_PUBLIC_SITE_URL` = `https://seokub.com`
+3. Set the Google OAuth redirect URI to `https://seokub.com/api/auth/callback/google`
+4. Deploy — then verify:
+   - `/api/health` returns `{"status":"ok","db":"up"}`
+   - `/sitemap.xml` lists all 9 locales
+   - `/robots.txt` disallows `/dashboard` and `/api`
+
+SQLite works locally; switch to PostgreSQL before deploying since Vercel's filesystem is read-only.
