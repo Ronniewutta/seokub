@@ -42,3 +42,7 @@ dev.db
 
 # build logs
 build*.log
+
+# test scripts
+e2e*.ps1
+test-audit.mjs
