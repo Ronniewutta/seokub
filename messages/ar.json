@@ -86,6 +86,7 @@
     "summaryPass": "يبدو الموقع سليمًا",
     "tabOverview": "نظرة عامة",
     "tabIssues": "المشاكل",
+    "tabSearchConsole": "Search Console",
     "colStatus": "الحالة",
     "colCheck": "الفحص",
     "colFinding": "النتيجة",
@@ -202,6 +203,22 @@
         }
       ]
     }
+  },
+  "gsc": {
+    "title": "Google Search Console",
+    "subtitle": "آخر 28 يومًا",
+    "clicks": "النقرات",
+    "impressions": "مرات الظهور",
+    "avgCtr": "متوسط نسبة النقر",
+    "avgPosition": "متوسط الترتيب",
+    "query": "الاستعلام",
+    "noData": "لا توجد بيانات استعلام لهذه الفترة.",
+    "notConnectedTitle": "اربط Google Search Console",
+    "notConnectedDesc": "اطّلع على مرات الظهور والنقرات والترتيب الفعلية لهذا الموقع.",
+    "notConnectedCta": "اربط Google",
+    "loading": "جارٍ تحميل بيانات Search Console…",
+    "error": "تعذّر تحميل بيانات Search Console.",
+    "rateLimited": "طلبات كثيرة جدًا. حاول مرة أخرى بعد لحظات."
   },
   "status": {
     "pass": "ناجح",

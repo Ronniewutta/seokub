@@ -3,8 +3,9 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import type { AuditResult } from "@/lib/audit";
+import SearchConsolePanel from "./SearchConsolePanel";
 
-type Tab = "overview" | "issues";
+type Tab = "overview" | "issues" | "searchConsole";
 
 export default function AuditReportClient({
   result,
@@ -86,8 +87,8 @@ export default function AuditReportClient({
         />
       </div>
 
-      <div className="mt-8 flex gap-1 rounded-lg border border-zinc-800 bg-zinc-900/50 p-1">
-        {(["overview", "issues"] as Tab[]).map((key) => (
+      <div className="mt-8 flex flex-wrap gap-1 rounded-lg border border-zinc-800 bg-zinc-900/50 p-1">
+        {(["overview", "issues", "searchConsole"] as Tab[]).map((key) => (
           <button
             key={key}
             onClick={() => setTab(key)}
@@ -97,7 +98,13 @@ export default function AuditReportClient({
                 : "text-zinc-400 hover:text-zinc-200"
             }`}
           >
-            {t(key === "overview" ? "tabOverview" : "tabIssues")}
+            {t(
+              key === "overview"
+                ? "tabOverview"
+                : key === "issues"
+                  ? "tabIssues"
+                  : "tabSearchConsole"
+            )}
             {key === "issues" && (
               <span className="ml-2 rounded-full bg-zinc-950/10 px-2 py-0.5 text-xs">
                 {failed.length + warned.length}
@@ -107,7 +114,13 @@ export default function AuditReportClient({
         ))}
       </div>
 
-      <div className="mt-6 space-y-3">
+      {tab === "searchConsole" && (
+        <div className="mt-6">
+          <SearchConsolePanel url={result.url} />
+        </div>
+      )}
+
+      <div className={`mt-6 space-y-3 ${tab === "searchConsole" ? "hidden" : ""}`}>
         {visibleChecks.length === 0 && (
           <p className="rounded-xl border border-zinc-800 px-6 py-10 text-center text-sm text-zinc-500">
             {t("summaryPass")}

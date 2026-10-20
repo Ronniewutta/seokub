@@ -86,6 +86,7 @@
     "summaryPass": "สภาพดี",
     "tabOverview": "ภาพรวม",
     "tabIssues": "ปัญหา",
+    "tabSearchConsole": "Search Console",
     "colStatus": "สถานะ",
     "colCheck": "รายการตรวจ",
     "colFinding": "สิ่งที่พบ",
@@ -202,6 +203,22 @@
         }
       ]
     }
+  },
+  "gsc": {
+    "title": "Google Search Console",
+    "subtitle": "28 วันล่าสุด",
+    "clicks": "คลิก",
+    "impressions": "การแสดง",
+    "avgCtr": "CTR เฉลี่ย",
+    "avgPosition": "ตำแหน่งเฉลี่ย",
+    "query": "คำค้น",
+    "noData": "ไม่มีข้อมูลคำค้นในช่วงนี้",
+    "notConnectedTitle": "เชื่อมต่อ Google Search Console",
+    "notConnectedDesc": "ดูการแสดง การคลิก และอันดับจริงสำหรับเว็บนี้",
+    "notConnectedCta": "เชื่อมต่อ Google",
+    "loading": "กำลังโหลดข้อมูล Search Console…",
+    "error": "โหลดข้อมูล Search Console ไม่สำเร็จ",
+    "rateLimited": "คำขอมากเกินไป ลองอีกครั้งในอีกสักครู่"
   },
   "status": {
     "pass": "ผ่าน",

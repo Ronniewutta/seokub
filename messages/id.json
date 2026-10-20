@@ -86,6 +86,7 @@
     "summaryPass": "Terlihat sehat",
     "tabOverview": "Ringkasan",
     "tabIssues": "Masalah",
+    "tabSearchConsole": "Search Console",
     "colStatus": "Status",
     "colCheck": "Pemeriksaan",
     "colFinding": "Temuan",
@@ -202,6 +203,22 @@
         }
       ]
     }
+  },
+  "gsc": {
+    "title": "Google Search Console",
+    "subtitle": "28 hari terakhir",
+    "clicks": "Klik",
+    "impressions": "Tayangan",
+    "avgCtr": "CTR rata-rata",
+    "avgPosition": "Posisi rata-rata",
+    "query": "Kueri",
+    "noData": "Tidak ada data kueri untuk periode ini.",
+    "notConnectedTitle": "Hubungkan Google Search Console",
+    "notConnectedDesc": "Lihat tayangan, klik, dan peringkat nyata untuk situs ini.",
+    "notConnectedCta": "Hubungkan Google",
+    "loading": "Memuat data Search Console…",
+    "error": "Tidak dapat memuat data Search Console.",
+    "rateLimited": "Terlalu banyak permintaan. Coba lagi sesaat lagi."
   },
   "status": {
     "pass": "Lulus",

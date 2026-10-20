@@ -86,6 +86,7 @@
     "summaryPass": "Trang khỏe mạnh",
     "tabOverview": "Tổng quan",
     "tabIssues": "Vấn đề",
+    "tabSearchConsole": "Search Console",
     "colStatus": "Trạng thái",
     "colCheck": "Kiểm tra",
     "colFinding": "Phát hiện",
@@ -202,6 +203,22 @@
         }
       ]
     }
+  },
+  "gsc": {
+    "title": "Google Search Console",
+    "subtitle": "28 ngày qua",
+    "clicks": "Lượt nhấp",
+    "impressions": "Lượt hiển thị",
+    "avgCtr": "CTR trung bình",
+    "avgPosition": "Vị trí trung bình",
+    "query": "Truy vấn",
+    "noData": "Không có dữ liệu truy vấn cho giai đoạn này.",
+    "notConnectedTitle": "Kết nối Google Search Console",
+    "notConnectedDesc": "Xem lượt hiển thị, lượt nhấp và thứ hạng thực tế cho trang này.",
+    "notConnectedCta": "Kết nối Google",
+    "loading": "Đang tải dữ liệu Search Console…",
+    "error": "Không thể tải dữ liệu Search Console.",
+    "rateLimited": "Quá nhiều yêu cầu. Thử lại sau ít phút."
   },
   "status": {
     "pass": "Đạt",

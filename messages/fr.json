@@ -86,6 +86,7 @@
     "summaryPass": "Plutôt en bonne santé",
     "tabOverview": "Aperçu",
     "tabIssues": "Problèmes",
+    "tabSearchConsole": "Search Console",
     "colStatus": "Statut",
     "colCheck": "Vérification",
     "colFinding": "Constat",
@@ -202,6 +203,22 @@
         }
       ]
     }
+  },
+  "gsc": {
+    "title": "Google Search Console",
+    "subtitle": "28 derniers jours",
+    "clicks": "Clics",
+    "impressions": "Impressions",
+    "avgCtr": "CTR moyen",
+    "avgPosition": "Position moyenne",
+    "query": "Requête",
+    "noData": "Aucune donnée de requête pour cette période.",
+    "notConnectedTitle": "Connectez Google Search Console",
+    "notConnectedDesc": "Consultez impressions, clics et positions réels pour ce site.",
+    "notConnectedCta": "Connecter Google",
+    "loading": "Chargement des données Search Console…",
+    "error": "Impossible de charger les données Search Console.",
+    "rateLimited": "Trop de requêtes. Réessayez dans un instant."
   },
   "status": {
     "pass": "OK",

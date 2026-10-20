@@ -86,6 +86,7 @@
     "summaryPass": "स्वस्थ दिख रहा है",
     "tabOverview": "सारांश",
     "tabIssues": "समस्याएँ",
+    "tabSearchConsole": "Search Console",
     "colStatus": "स्थिति",
     "colCheck": "जाँच",
     "colFinding": "निष्कर्ष",
@@ -202,6 +203,22 @@
         }
       ]
     }
+  },
+  "gsc": {
+    "title": "Google Search Console",
+    "subtitle": "पिछले 28 दिन",
+    "clicks": "क्लिक",
+    "impressions": "इम्प्रेशन",
+    "avgCtr": "औसत CTR",
+    "avgPosition": "औसत स्थिति",
+    "query": "क्वेरी",
+    "noData": "इस अवधि के लिए कोई क्वेरी डेटा नहीं।",
+    "notConnectedTitle": "Google Search Console कनेक्ट करें",
+    "notConnectedDesc": "इस साइट के लिए वास्तविक इम्प्रेशन, क्लिक और रैंकिंग देखें।",
+    "notConnectedCta": "Google कनेक्ट करें",
+    "loading": "Search Console डेटा लोड हो रहा है…",
+    "error": "Search Console डेटा लोड नहीं हो सका।",
+    "rateLimited": "बहुत अधिक अनुरोध। कुछ देर में पुनः प्रयास करें।"
   },
   "status": {
     "pass": "पास",
