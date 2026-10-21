@@ -6,7 +6,8 @@
     "signup": "Bắt đầu",
     "dashboard": "Bảng điều khiển",
     "newAudit": "Kiểm tra mới",
-    "logout": "Đăng xuất"
+    "logout": "Đăng xuất",
+    "settings": "Cài đặt"
   },
   "landing": {
     "badge": "Kiểm tra SEO cấp AI với giá phải chăng",
@@ -241,6 +242,14 @@
     "empty": "Chưa có kiểm tra định kỳ nào.",
     "created": "Đã tạo lịch.",
     "removed": "Đã xóa lịch."
+  },
+  "settings": {
+    "title": "Cài đặt",
+    "subtitle": "Quản lý tùy chọn tài khoản của bạn",
+    "emailReportsTitle": "Báo cáo qua email",
+    "emailReportsDesc": "Gửi email cho tôi khi một kiểm tra định kỳ hoàn tất.",
+    "saved": "Đã lưu",
+    "signedInAs": "Đăng nhập với tư cách"
   },
   "status": {
     "pass": "Đạt",

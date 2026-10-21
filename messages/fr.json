@@ -6,7 +6,8 @@
     "signup": "Commencer",
     "dashboard": "Tableau de bord",
     "newAudit": "Nouvel audit",
-    "logout": "Se déconnecter"
+    "logout": "Se déconnecter",
+    "settings": "Paramètres"
   },
   "landing": {
     "badge": "Audits SEO de niveau IA sans le prix de l'entreprise",
@@ -241,6 +242,14 @@
     "empty": "Aucun audit planifié pour le moment.",
     "created": "Planification créée.",
     "removed": "Planification supprimée."
+  },
+  "settings": {
+    "title": "Paramètres",
+    "subtitle": "Gérez les préférences de votre compte",
+    "emailReportsTitle": "Rapports par e-mail",
+    "emailReportsDesc": "Envoyez-moi un e-mail lorsqu'un audit planifié se termine.",
+    "saved": "Enregistré",
+    "signedInAs": "Connecté en tant que"
   },
   "status": {
     "pass": "OK",

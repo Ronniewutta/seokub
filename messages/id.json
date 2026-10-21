@@ -6,7 +6,8 @@
     "signup": "Mulai",
     "dashboard": "Dasbor",
     "newAudit": "Audit Baru",
-    "logout": "Keluar"
+    "logout": "Keluar",
+    "settings": "Pengaturan"
   },
   "landing": {
     "badge": "Audit SEO berbasis AI tanpa harga perusahaan",
@@ -241,6 +242,14 @@
     "empty": "Belum ada audit terjadwal.",
     "created": "Jadwal dibuat.",
     "removed": "Jadwal dihapus."
+  },
+  "settings": {
+    "title": "Pengaturan",
+    "subtitle": "Kelola preferensi akun Anda",
+    "emailReportsTitle": "Laporan email",
+    "emailReportsDesc": "Kirimi saya email saat audit terjadwal selesai.",
+    "saved": "Tersimpan",
+    "signedInAs": "Masuk sebagai"
   },
   "status": {
     "pass": "Lulus",

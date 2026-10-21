@@ -6,7 +6,8 @@
     "signup": "Começar",
     "dashboard": "Painel",
     "newAudit": "Nova auditoria",
-    "logout": "Sair"
+    "logout": "Sair",
+    "settings": "Configurações"
   },
   "landing": {
     "badge": "Auditorias SEO com inteligência artificial sem preço de empresa",
@@ -241,6 +242,14 @@
     "empty": "Nenhuma auditoria agendada ainda.",
     "created": "Agendamento criado.",
     "removed": "Agendamento removido."
+  },
+  "settings": {
+    "title": "Configurações",
+    "subtitle": "Gerencie as preferências da sua conta",
+    "emailReportsTitle": "Relatórios por e-mail",
+    "emailReportsDesc": "Me envie um e-mail quando uma auditoria agendada for concluída.",
+    "saved": "Salvo",
+    "signedInAs": "Conectado como"
   },
   "status": {
     "pass": "Aprovado",

@@ -6,7 +6,8 @@
     "signup": "Comenzar",
     "dashboard": "Panel",
     "newAudit": "Nueva auditoría",
-    "logout": "Cerrar sesión"
+    "logout": "Cerrar sesión",
+    "settings": "Configuración"
   },
   "landing": {
     "badge": "Auditorías SEO de nivel IA sin precio de empresa",
@@ -241,6 +242,14 @@
     "empty": "Aún no hay auditorías programadas.",
     "created": "Programación creada.",
     "removed": "Programación eliminada."
+  },
+  "settings": {
+    "title": "Configuración",
+    "subtitle": "Gestiona las preferencias de tu cuenta",
+    "emailReportsTitle": "Informes por correo",
+    "emailReportsDesc": "Envíame un correo cuando finalice una auditoría programada.",
+    "saved": "Guardado",
+    "signedInAs": "Sesión iniciada como"
   },
   "status": {
     "pass": "Correcto",

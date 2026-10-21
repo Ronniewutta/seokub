@@ -6,7 +6,8 @@
     "signup": "Get started",
     "dashboard": "Dashboard",
     "newAudit": "New audit",
-    "logout": "Log out"
+    "logout": "Log out",
+    "settings": "Settings"
   },
   "landing": {
     "badge": "AI-grade SEO audits without the enterprise price tag",
@@ -241,6 +242,14 @@
     "empty": "No scheduled audits yet.",
     "created": "Schedule created.",
     "removed": "Schedule removed."
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your account preferences",
+    "emailReportsTitle": "Email reports",
+    "emailReportsDesc": "Email me when a scheduled audit completes.",
+    "saved": "Saved",
+    "signedInAs": "Signed in as"
   },
   "status": {
     "pass": "Pass",

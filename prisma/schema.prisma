@@ -13,6 +13,7 @@ model User {
   email         String?   @unique
   emailVerified DateTime?
   image         String?
+  emailReports  Boolean   @default(true)
   accounts      Account[]
   sessions      Session[]
   audits        Audit[]

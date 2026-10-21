@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { runAudit } from "@/lib/audit";
+import { sendAuditEmail } from "@/lib/mail";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -34,7 +35,12 @@ export async function GET(req: Request) {
     take: BATCH_LIMIT,
   });
 
-  const results = { ran: 0, skipped: 0, failed: 0 };
+  const results = { ran: 0, skipped: 0, failed: 0, emailed: 0 };
+  const FREQUENCY_LABEL: Record<string, string> = {
+    daily: "Daily",
+    weekly: "Weekly",
+    monthly: "Monthly",
+  };
 
   for (const schedule of due) {
     if (!isDue(schedule.lastRunAt, schedule.frequency, now)) {
@@ -44,7 +50,7 @@ export async function GET(req: Request) {
 
     try {
       const audit = await runAudit(schedule.url);
-      await prisma.audit.create({
+      const saved = await prisma.audit.create({
         data: {
           url: audit.url,
           score: audit.score,
@@ -58,6 +64,18 @@ export async function GET(req: Request) {
         data: { lastRunAt: now },
       });
       results.ran += 1;
+
+      const user = await prisma.user.findUnique({ where: { id: schedule.userId } });
+      if (user?.email && user.emailReports) {
+        const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://seokub.com";
+        const sent = await sendAuditEmail(
+          user.email,
+          audit,
+          `${siteUrl}/audit/${saved.id}`,
+          FREQUENCY_LABEL[schedule.frequency] ?? "Scheduled"
+        );
+        if (sent) results.emailed += 1;
+      }
     } catch {
       results.failed += 1;
     }
