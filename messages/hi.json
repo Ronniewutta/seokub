@@ -7,7 +7,8 @@
     "dashboard": "डैशबोर्ड",
     "newAudit": "नया ऑडिट",
     "logout": "लॉग आउट",
-    "settings": "सेटिंग्स"
+    "settings": "सेटिंग्स",
+    "keywords": "कीवर्ड"
   },
   "landing": {
     "badge": "AI-स्तरीय SEO ऑडिट, एंटरप्राइज़ कीमतों पर नहीं",
@@ -250,6 +251,29 @@
     "emailReportsDesc": "निर्धारित ऑडिट पूरा होने पर मुझे ईमेल करें।",
     "saved": "सहेजा गया",
     "signedInAs": "इस रूप में साइन इन"
+  },
+  "keywords": {
+    "title": "कीवर्ड रैंक ट्रैकिंग",
+    "subtitle": "जानें आपकी साइट दूसरी कीवर्ड्स के लिए Google में कहाँ रैंक करती है।",
+    "domainPlaceholder": "yourdomain.com",
+    "keywordPlaceholder": "आपकी कीवर्ड",
+    "add": "कीवर्ड जोड़ें",
+    "adding": "जोड़ा जा रहा है…",
+    "keyword": "कीवर्ड",
+    "domain": "डोमेन",
+    "location": "स्थान",
+    "position": "स्थिति",
+    "change": "परिवर्तन",
+    "updated": "अपडेट",
+    "notRanking": "रैंक नहीं",
+    "remove": "हटाएँ",
+    "empty": "अभी कोई ट्रैक कीवर्ड नहीं।",
+    "loading": "लोड हो रहा है…",
+    "refresh": "रीफ्रेश",
+    "positions": "स्थितियाँ",
+    "addError": "कीवर्ड नहीं जोड़ा जा सका।",
+    "notConfiguredTitle": "SERP API कनेक्ट करें",
+    "notConfiguredDesc": "रैंकिंग ट्रैक करने के लिए अपनी SerpAPI key जोड़ें। रैंकिंग cron से रोज़ रीफ्रेश होती है।"
   },
   "status": {
     "pass": "पास",

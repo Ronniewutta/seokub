@@ -7,7 +7,8 @@
     "dashboard": "Dasbor",
     "newAudit": "Audit Baru",
     "logout": "Keluar",
-    "settings": "Pengaturan"
+    "settings": "Pengaturan",
+    "keywords": "Kata Kunci"
   },
   "landing": {
     "badge": "Audit SEO berbasis AI tanpa harga perusahaan",
@@ -250,6 +251,29 @@
     "emailReportsDesc": "Kirimi saya email saat audit terjadwal selesai.",
     "saved": "Tersimpan",
     "signedInAs": "Masuk sebagai"
+  },
+  "keywords": {
+    "title": "Pelacakan peringkat kata kunci",
+    "subtitle": "Lihat peringkat situs Anda di Google untuk kata kunci yang penting.",
+    "domainPlaceholder": "yourdomain.com",
+    "keywordPlaceholder": "kata kunci Anda",
+    "add": "Tambah kata kunci",
+    "adding": "Menambahkan…",
+    "keyword": "Kata kunci",
+    "domain": "Domain",
+    "location": "Lokasi",
+    "position": "Posisi",
+    "change": "Perubahan",
+    "updated": "Diperbarui",
+    "notRanking": "Tidak bersaing",
+    "remove": "Hapus",
+    "empty": "Belum ada kata kunci yang dilacak.",
+    "loading": "Memuat…",
+    "refresh": "Segarkan",
+    "positions": "posisi",
+    "addError": "Tidak dapat menambahkan kata kunci.",
+    "notConfiguredTitle": "Hubungkan SERP API",
+    "notConfiguredDesc": "Tambahkan kunci SerpAPI Anda untuk mulai melacak peringkat. Peringkat diperbarui setiap hari melalui cron."
   },
   "status": {
     "pass": "Lulus",

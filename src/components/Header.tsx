@@ -43,6 +43,12 @@ export default function Header() {
                 {t("dashboard")}
               </Link>
               <Link
+                href="/keywords"
+                className="hidden text-sm font-medium text-zinc-200 transition-colors hover:text-brand-300 sm:block"
+              >
+                {t("keywords")}
+              </Link>
+              <Link
                 href="/settings"
                 className="hidden text-sm font-medium text-zinc-200 transition-colors hover:text-brand-300 sm:block"
               >

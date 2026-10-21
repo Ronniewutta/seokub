@@ -12,6 +12,10 @@
     {
       "path": "/api/cron/recurring-audits",
       "schedule": "0 * * * *"
+    },
+    {
+      "path": "/api/cron/keyword-rankings",
+      "schedule": "0 6 * * *"
     }
   ]
 }

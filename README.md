@@ -11,6 +11,7 @@ SEO audit & suggestion SaaS — a lighter alternative to Ahrefs, Semrush, SE Ran
 - **Google Search Console**: real impressions, clicks, CTR and position on reports (needs domain verification)
 - **Recurring audits**: schedule daily/weekly/monthly re-checks; Vercel Cron runs them hourly
 - **Email reports**: scheduled results delivered via Resend (toggle in Settings; silently skipped if no API key)
+- **Keyword rank tracking**: track Google position for keywords per domain/location (SerpAPI; `SERP_MOCK=true` for demo data)
 - **Security**: CSP + security headers, CSRF protection (NextAuth), per-user rate limiting, dependency audit in CI
 
 ## Stack
@@ -54,6 +55,8 @@ Open http://localhost:3000 — the middleware redirects to your locale (default 
 | GET | `/api/search-console?url=` | Search Console summary (needs Google scope) |
 | GET/POST/DELETE | `/api/recurring` | List / create / remove a scheduled audit |
 | GET | `/api/cron/recurring-audits` | Vercel Cron trigger — runs all due scheduled audits |
+| GET | `/api/cron/keyword-rankings` | Vercel Cron trigger — refreshes SERP rankings (daily) |
+| GET/POST/DELETE | `/api/keywords` | List / add / remove tracked keywords |
 | GET/POST | `/api/settings` | Read / update the email-reports preference |
 
 All endpoints require a valid session.

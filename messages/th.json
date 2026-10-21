@@ -7,7 +7,8 @@
     "dashboard": "แดชบอร์ด",
     "newAudit": "สแกนใหม่",
     "logout": "ออกจากระบบ",
-    "settings": "การตั้งค่า"
+    "settings": "การตั้งค่า",
+    "keywords": "คำค้น"
   },
   "landing": {
     "badge": "สแกน SEO ระดับ AI ในราคาที่ทุกคนเข้าถึงได้",
@@ -250,6 +251,29 @@
     "emailReportsDesc": "ส่งอีเมลถึงฉันเมื่อการสแกนตามกำหนดเสร็จ",
     "saved": "บันทึกแล้ว",
     "signedInAs": "เข้าสู่ระบบด้วย"
+  },
+  "keywords": {
+    "title": "ติดตามอันดับคำค้น",
+    "subtitle": "ดูอันดับเว็บของคุณใน Google สำหรับคำค้นที่สำคัญ",
+    "domainPlaceholder": "yourdomain.com",
+    "keywordPlaceholder": "คำค้นของคุณ",
+    "add": "เพิ่มคำค้น",
+    "adding": "กำลังเพิ่ม…",
+    "keyword": "คำค้น",
+    "domain": "โดเมน",
+    "location": "ตำแหน่งที่ตั้ง",
+    "position": "อันดับ",
+    "change": "การเปลี่ยนแปลง",
+    "updated": "อัปเดต",
+    "notRanking": "ไม่ติดอันดับ",
+    "remove": "ลบ",
+    "empty": "ยังไม่มีคำค้นที่ติดตาม",
+    "loading": "กำลังโหลด…",
+    "refresh": "รีเฟรช",
+    "positions": "ตำแหน่ง",
+    "addError": "เพิ่มคำค้นไม่สำเร็จ",
+    "notConfiguredTitle": "เชื่อมต่อ SERP API",
+    "notConfiguredDesc": "เพิ่ม SerpAPI key ของคุณเพื่อเริ่มติดตามอันดับ อันดับจะรีเฟรชทุกวันผ่าน cron"
   },
   "status": {
     "pass": "ผ่าน",

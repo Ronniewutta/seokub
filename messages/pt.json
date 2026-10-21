@@ -7,7 +7,8 @@
     "dashboard": "Painel",
     "newAudit": "Nova auditoria",
     "logout": "Sair",
-    "settings": "Configurações"
+    "settings": "Configurações",
+    "keywords": "Palavras-chave"
   },
   "landing": {
     "badge": "Auditorias SEO com inteligência artificial sem preço de empresa",
@@ -250,6 +251,29 @@
     "emailReportsDesc": "Me envie um e-mail quando uma auditoria agendada for concluída.",
     "saved": "Salvo",
     "signedInAs": "Conectado como"
+  },
+  "keywords": {
+    "title": "Monitoramento de posição",
+    "subtitle": "Veja onde seu site aparece no Google para as palavras-chave que importam.",
+    "domainPlaceholder": "yourdomain.com",
+    "keywordPlaceholder": "sua palavra-chave",
+    "add": "Adicionar palavra-chave",
+    "adding": "Adicionando…",
+    "keyword": "Palavra-chave",
+    "domain": "Domínio",
+    "location": "Localização",
+    "position": "Posição",
+    "change": "Variação",
+    "updated": "Atualizado",
+    "notRanking": "Sem posição",
+    "remove": "Remover",
+    "empty": "Nenhuma palavra-chave monitorada ainda.",
+    "loading": "Carregando…",
+    "refresh": "Atualizar",
+    "positions": "posições",
+    "addError": "Não foi possível adicionar a palavra-chave.",
+    "notConfiguredTitle": "Conecte uma API SERP",
+    "notConfiguredDesc": "Adicione sua chave SerpAPI para começar a monitorar. As posições são atualizadas diariamente via cron."
   },
   "status": {
     "pass": "Aprovado",

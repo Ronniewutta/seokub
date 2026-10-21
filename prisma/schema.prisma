@@ -18,6 +18,7 @@ model User {
   sessions      Session[]
   audits        Audit[]
   recurringAudits RecurringAudit[]
+  keywords      Keyword[]
   createdAt     DateTime  @default(now())
 }
 
@@ -80,4 +81,29 @@ model RecurringAudit {
 
   @@index([active, lastRunAt])
   @@unique([userId, url, frequency])
+}
+
+model Keyword {
+  id        String           @id @default(cuid())
+  userId    String
+  user      User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  domain    String
+  keyword   String
+  location  String           @default("United States")
+  createdAt DateTime         @default(now())
+  rankings  KeywordRanking[]
+
+  @@unique([userId, domain, keyword, location])
+}
+
+model KeywordRanking {
+  id        String   @id @default(cuid())
+  keywordId String
+  keyword   Keyword  @relation(fields: [keywordId], references: [id], onDelete: Cascade)
+  position  Int?
+  url       String?
+  title     String?
+  date      DateTime @default(now())
+
+  @@index([keywordId, date])
 }

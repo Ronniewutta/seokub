@@ -7,7 +7,8 @@
     "dashboard": "Tableau de bord",
     "newAudit": "Nouvel audit",
     "logout": "Se déconnecter",
-    "settings": "Paramètres"
+    "settings": "Paramètres",
+    "keywords": "Mots-clés"
   },
   "landing": {
     "badge": "Audits SEO de niveau IA sans le prix de l'entreprise",
@@ -250,6 +251,29 @@
     "emailReportsDesc": "Envoyez-moi un e-mail lorsqu'un audit planifié se termine.",
     "saved": "Enregistré",
     "signedInAs": "Connecté en tant que"
+  },
+  "keywords": {
+    "title": "Suivi du positionnement",
+    "subtitle": "Découvrez où se positionne votre site sur Google pour les mots-clés qui comptent.",
+    "domainPlaceholder": "yourdomain.com",
+    "keywordPlaceholder": "votre mot-clé",
+    "add": "Ajouter un mot-clé",
+    "adding": "Ajout…",
+    "keyword": "Mot-clé",
+    "domain": "Domaine",
+    "location": "Localisation",
+    "position": "Position",
+    "change": "Variation",
+    "updated": "Mis à jour",
+    "notRanking": "Non classé",
+    "remove": "Supprimer",
+    "empty": "Aucun mot-clé suivi pour le moment.",
+    "loading": "Chargement…",
+    "refresh": "Actualiser",
+    "positions": "positions",
+    "addError": "Impossible d'ajouter ce mot-clé.",
+    "notConfiguredTitle": "Connectez une API SERP",
+    "notConfiguredDesc": "Ajoutez votre clé SerpAPI pour commencer le suivi. Les positions sont actualisées quotidiennement via cron."
   },
   "status": {
     "pass": "OK",

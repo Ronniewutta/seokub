@@ -7,7 +7,8 @@
     "dashboard": "لوحة التحكم",
     "newAudit": "تدقيق جديد",
     "logout": "تسجيل الخروج",
-    "settings": "الإعدادات"
+    "settings": "الإعدادات",
+    "keywords": "الكلمات المفتاحية"
   },
   "landing": {
     "badge": "تدقيق SEO بمستوى الذكاء الاصطناعي دون أسعار الشركات الكبرى",
@@ -250,6 +251,29 @@
     "emailReportsDesc": "أرسل لي بريدًا عند اكتمال عملية تدقيق مجدولة.",
     "saved": "تم الحفظ",
     "signedInAs": "مسجّل الدخول باسم"
+  },
+  "keywords": {
+    "title": "تتبع ترتيب الكلمات المفتاحية",
+    "subtitle": "تابع موقعك في Google للكلمات المفتاحية المهمة.",
+    "domainPlaceholder": "yourdomain.com",
+    "keywordPlaceholder": "كلمتك المفتاحية",
+    "add": "أضف كلمة مفتاحية",
+    "adding": "جارٍ الإضافة…",
+    "keyword": "الكلمة المفتاحية",
+    "domain": "النطاق",
+    "location": "الموقع",
+    "position": "الترتيب",
+    "change": "التغيير",
+    "updated": "محدثة",
+    "notRanking": "غير مصنف",
+    "remove": "إزالة",
+    "empty": "لا توجد كلمات مفتاحية متتبعة بعد.",
+    "loading": "جارٍ التحميل…",
+    "refresh": "تحديث",
+    "positions": "مركزًا",
+    "addError": "تعذّر إضافة الكلمة المفتاحية.",
+    "notConfiguredTitle": "اربط واجهة SERP API",
+    "notConfiguredDesc": "أضف مفتاح SerpAPI الخاص بك لبدء تتبع الترتيب. يتم تحديث الترتيب يوميًا عبر cron."
   },
   "status": {
     "pass": "ناجح",

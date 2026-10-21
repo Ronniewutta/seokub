@@ -7,7 +7,8 @@
     "dashboard": "Dashboard",
     "newAudit": "New audit",
     "logout": "Log out",
-    "settings": "Settings"
+    "settings": "Settings",
+    "keywords": "Keywords"
   },
   "landing": {
     "badge": "AI-grade SEO audits without the enterprise price tag",
@@ -250,6 +251,29 @@
     "emailReportsDesc": "Email me when a scheduled audit completes.",
     "saved": "Saved",
     "signedInAs": "Signed in as"
+  },
+  "keywords": {
+    "title": "Keyword rank tracking",
+    "subtitle": "Track where your site ranks in Google for the keywords that matter.",
+    "domainPlaceholder": "yourdomain.com",
+    "keywordPlaceholder": "your keyword",
+    "add": "Add keyword",
+    "adding": "Adding…",
+    "keyword": "Keyword",
+    "domain": "Domain",
+    "location": "Location",
+    "position": "Position",
+    "change": "Change",
+    "updated": "Updated",
+    "notRanking": "Not ranking",
+    "remove": "Remove",
+    "empty": "No tracked keywords yet.",
+    "loading": "Loading…",
+    "refresh": "Refresh",
+    "positions": "positions",
+    "addError": "Couldn't add that keyword.",
+    "notConfiguredTitle": "Connect a SERP API",
+    "notConfiguredDesc": "Add your SerpAPI key to start tracking rankings. Rankings refresh daily via cron."
   },
   "status": {
     "pass": "Pass",

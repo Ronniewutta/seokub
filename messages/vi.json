@@ -7,7 +7,8 @@
     "dashboard": "Bảng điều khiển",
     "newAudit": "Kiểm tra mới",
     "logout": "Đăng xuất",
-    "settings": "Cài đặt"
+    "settings": "Cài đặt",
+    "keywords": "Từ khóa"
   },
   "landing": {
     "badge": "Kiểm tra SEO cấp AI với giá phải chăng",
@@ -250,6 +251,29 @@
     "emailReportsDesc": "Gửi email cho tôi khi một kiểm tra định kỳ hoàn tất.",
     "saved": "Đã lưu",
     "signedInAs": "Đăng nhập với tư cách"
+  },
+  "keywords": {
+    "title": "Theo dõi thứ hạng từ khóa",
+    "subtitle": "Xem trang của bạn xếp hạng trên Google cho những từ khóa quan trọng.",
+    "domainPlaceholder": "yourdomain.com",
+    "keywordPlaceholder": "từ khóa của bạn",
+    "add": "Thêm từ khóa",
+    "adding": "Đang thêm…",
+    "keyword": "Từ khóa",
+    "domain": "Tên miền",
+    "location": "Vị trí",
+    "position": "Thứ hạng",
+    "change": "Thay đổi",
+    "updated": "Cập nhật",
+    "notRanking": "Không xếp hạng",
+    "remove": "Xóa",
+    "empty": "Chưa có từ khóa nào được theo dõi.",
+    "loading": "Đang tải…",
+    "refresh": "Làm mới",
+    "positions": "vị trí",
+    "addError": "Không thể thêm từ khóa.",
+    "notConfiguredTitle": "Kết nối SERP API",
+    "notConfiguredDesc": "Thêm khóa SerpAPI của bạn để bắt đầu theo dõi thứ hạng. Thứ hạng được làm mới hàng ngày qua cron."
   },
   "status": {
     "pass": "Đạt",

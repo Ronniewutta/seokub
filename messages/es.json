@@ -7,7 +7,8 @@
     "dashboard": "Panel",
     "newAudit": "Nueva auditoría",
     "logout": "Cerrar sesión",
-    "settings": "Configuración"
+    "settings": "Configuración",
+    "keywords": "Palabras clave"
   },
   "landing": {
     "badge": "Auditorías SEO de nivel IA sin precio de empresa",
@@ -250,6 +251,29 @@
     "emailReportsDesc": "Envíame un correo cuando finalice una auditoría programada.",
     "saved": "Guardado",
     "signedInAs": "Sesión iniciada como"
+  },
+  "keywords": {
+    "title": "Seguimiento de posiciones",
+    "subtitle": "Descubre dónde se posiciona tu sitio en Google para las palabras clave que importan.",
+    "domainPlaceholder": "yourdomain.com",
+    "keywordPlaceholder": "tu palabra clave",
+    "add": "Añadir palabra clave",
+    "adding": "Añadiendo…",
+    "keyword": "Palabra clave",
+    "domain": "Dominio",
+    "location": "Ubicación",
+    "position": "Posición",
+    "change": "Cambio",
+    "updated": "Actualizado",
+    "notRanking": "Sin posición",
+    "remove": "Eliminar",
+    "empty": "Aún no hay palabras clave registradas.",
+    "loading": "Cargando…",
+    "refresh": "Actualizar",
+    "positions": "posiciones",
+    "addError": "No se pudo añadir la palabra clave.",
+    "notConfiguredTitle": "Conecta una SERP API",
+    "notConfiguredDesc": "Añade tu clave de SerpAPI para empezar a seguir posiciones. Se actualizan a diario vía cron."
   },
   "status": {
     "pass": "Correcto",
