@@ -226,6 +226,22 @@
     "error": "Não foi possível carregar os dados do Search Console.",
     "rateLimited": "Solicitações demais. Tente novamente em instantes."
   },
+  "recurring": {
+    "title": "Auditorias agendadas",
+    "subtitle": "Reverifica este site automaticamente",
+    "frequency": "Frequência",
+    "daily": "Diária",
+    "weekly": "Semanal",
+    "monthly": "Mensal",
+    "add": "Agendar",
+    "adding": "Agendando…",
+    "lastRun": "Última execução",
+    "never": "Nunca",
+    "remove": "Remover",
+    "empty": "Nenhuma auditoria agendada ainda.",
+    "created": "Agendamento criado.",
+    "removed": "Agendamento removido."
+  },
   "status": {
     "pass": "Aprovado",
     "warn": "Atenção",

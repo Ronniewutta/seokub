@@ -226,6 +226,22 @@
     "error": "No se pudieron cargar los datos de Search Console.",
     "rateLimited": "Demasiadas solicitudes. Inténtalo de nuevo en un momento."
   },
+  "recurring": {
+    "title": "Auditorías programadas",
+    "subtitle": "Re-verifica este sitio automáticamente",
+    "frequency": "Frecuencia",
+    "daily": "Diaria",
+    "weekly": "Semanal",
+    "monthly": "Mensual",
+    "add": "Programar",
+    "adding": "Programando…",
+    "lastRun": "Última ejecución",
+    "never": "Nunca",
+    "remove": "Eliminar",
+    "empty": "Aún no hay auditorías programadas.",
+    "created": "Programación creada.",
+    "removed": "Programación eliminada."
+  },
   "status": {
     "pass": "Correcto",
     "warn": "Aviso",

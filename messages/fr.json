@@ -226,6 +226,22 @@
     "error": "Impossible de charger les données Search Console.",
     "rateLimited": "Trop de requêtes. Réessayez dans un instant."
   },
+  "recurring": {
+    "title": "Audits planifiés",
+    "subtitle": "Revérifie automatiquement ce site",
+    "frequency": "Fréquence",
+    "daily": "Quotidienne",
+    "weekly": "Hebdomadaire",
+    "monthly": "Mensuelle",
+    "add": "Planifier",
+    "adding": "Planification…",
+    "lastRun": "Dernière exécution",
+    "never": "Jamais",
+    "remove": "Supprimer",
+    "empty": "Aucun audit planifié pour le moment.",
+    "created": "Planification créée.",
+    "removed": "Planification supprimée."
+  },
   "status": {
     "pass": "OK",
     "warn": "Avertissement",

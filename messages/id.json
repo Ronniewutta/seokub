@@ -226,6 +226,22 @@
     "error": "Tidak dapat memuat data Search Console.",
     "rateLimited": "Terlalu banyak permintaan. Coba lagi sesaat lagi."
   },
+  "recurring": {
+    "title": "Audit terjadwal",
+    "subtitle": "Periksa ulang situs ini secara otomatis",
+    "frequency": "Frekuensi",
+    "daily": "Harian",
+    "weekly": "Mingguan",
+    "monthly": "Bulanan",
+    "add": "Jadwalkan",
+    "adding": "Menjadwalkan…",
+    "lastRun": "Terakhir dijalankan",
+    "never": "Belum pernah",
+    "remove": "Hapus",
+    "empty": "Belum ada audit terjadwal.",
+    "created": "Jadwal dibuat.",
+    "removed": "Jadwal dihapus."
+  },
   "status": {
     "pass": "Lulus",
     "warn": "Peringatan",

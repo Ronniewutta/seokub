@@ -8,6 +8,8 @@ SEO audit & suggestion SaaS — a lighter alternative to Ahrefs, Semrush, SE Ran
 - **0–100 health score** with prioritized, plain-English recommendations
 - **Google sign-in** (NextAuth, database sessions)
 - **8 markets**: English, Thai, Hindi, Indonesian, Arabic (RTL), Spanish, French, Portuguese, Vietnamese
+- **Google Search Console**: real impressions, clicks, CTR and position on reports (needs domain verification)
+- **Recurring audits**: schedule daily/weekly/monthly re-checks; Vercel Cron runs them hourly
 - **Security**: CSP + security headers, CSRF protection (NextAuth), per-user rate limiting, dependency audit in CI
 
 ## Stack
@@ -48,6 +50,9 @@ Open http://localhost:3000 — the middleware redirects to your locale (default 
 | POST | `/api/audits` | Run an audit `{ "url": "https://example.com" }` (rate-limited: 5/min per user) |
 | GET | `/api/audits` | List the signed-in user's audits |
 | GET | `/api/audits/:id` | Get a single audit report |
+| GET | `/api/search-console?url=` | Search Console summary (needs Google scope) |
+| GET/POST/DELETE | `/api/recurring` | List / create / remove a scheduled audit |
+| GET | `/api/cron/recurring-audits` | Vercel Cron trigger — runs all due scheduled audits |
 
 All endpoints require a valid session.
 

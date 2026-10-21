@@ -7,6 +7,7 @@ import { prisma } from "@/lib/prisma";
 import { Link } from "@/i18n/navigation";
 import AuditReportClient from "@/components/AuditReportClient";
 import ReauditButton from "@/components/ReauditButton";
+import RecurringPanel from "@/components/RecurringPanel";
 
 export default async function AuditReportPage({
   params,
@@ -70,6 +71,10 @@ export default async function AuditReportPage({
 
       <div className="mt-10 border-t border-zinc-800/60 pt-8">
         <ReauditButton url={audit.url} locale={locale} />
+      </div>
+
+      <div className="mt-10 border-t border-zinc-800/60 pt-8">
+        <RecurringPanel url={audit.url} />
       </div>
     </div>
   );

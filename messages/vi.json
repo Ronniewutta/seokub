@@ -226,6 +226,22 @@
     "error": "Không thể tải dữ liệu Search Console.",
     "rateLimited": "Quá nhiều yêu cầu. Thử lại sau ít phút."
   },
+  "recurring": {
+    "title": "Kiểm tra định kỳ",
+    "subtitle": "Tự động kiểm tra lại trang này",
+    "frequency": "Tần suất",
+    "daily": "Hàng ngày",
+    "weekly": "Hàng tuần",
+    "monthly": "Hàng tháng",
+    "add": "Đặt lịch",
+    "adding": "Đang đặt lịch…",
+    "lastRun": "Lần chạy cuối",
+    "never": "Chưa bao giờ",
+    "remove": "Xóa",
+    "empty": "Chưa có kiểm tra định kỳ nào.",
+    "created": "Đã tạo lịch.",
+    "removed": "Đã xóa lịch."
+  },
   "status": {
     "pass": "Đạt",
     "warn": "Cảnh báo",

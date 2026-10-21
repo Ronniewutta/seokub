@@ -16,6 +16,7 @@ model User {
   accounts      Account[]
   sessions      Session[]
   audits        Audit[]
+  recurringAudits RecurringAudit[]
   createdAt     DateTime  @default(now())
 }
 
@@ -64,4 +65,18 @@ model Audit {
   createdAt DateTime @default(now())
 
   @@index([userId, createdAt])
+}
+
+model RecurringAudit {
+  id         String    @id @default(cuid())
+  userId     String
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  url        String
+  frequency  String
+  active     Boolean   @default(true)
+  lastRunAt  DateTime?
+  createdAt  DateTime  @default(now())
+
+  @@index([active, lastRunAt])
+  @@unique([userId, url, frequency])
 }

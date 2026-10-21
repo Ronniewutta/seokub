@@ -226,6 +226,22 @@
     "error": "Couldn't load Search Console data.",
     "rateLimited": "Too many requests. Try again in a moment."
   },
+  "recurring": {
+    "title": "Scheduled audits",
+    "subtitle": "Automatically re-check this site",
+    "frequency": "Frequency",
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "add": "Schedule",
+    "adding": "Scheduling…",
+    "lastRun": "Last run",
+    "never": "Never",
+    "remove": "Remove",
+    "empty": "No scheduled audits yet.",
+    "created": "Schedule created.",
+    "removed": "Schedule removed."
+  },
   "status": {
     "pass": "Pass",
     "warn": "Warning",
