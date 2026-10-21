@@ -6,6 +6,7 @@ import { authOptions } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { Link } from "@/i18n/navigation";
 import ScoreBadge from "@/components/ScoreBadge";
+import ScoreTrendChart from "@/components/ScoreTrendChart";
 
 export default async function DashboardPage({
   params,
@@ -50,6 +51,10 @@ export default async function DashboardPage({
     dateStyle: "medium",
     timeStyle: "short",
   });
+  const shortFmt = new Intl.DateTimeFormat(locale, { month: "short", day: "numeric" });
+  const trendPoints = [...rows]
+    .reverse()
+    .map((r) => ({ date: shortFmt.format(r.createdAt), score: r.score }));
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12">
@@ -83,6 +88,17 @@ export default async function DashboardPage({
         <StatCard label={t("statAvgScore")} value={rows.length ? String(avgScore) : "—"} />
         <StatCard label={t("statIssues")} value={String(openIssues)} />
       </div>
+
+      {rows.length > 0 && (
+        <div className="mt-6">
+          <ScoreTrendChart
+            points={trendPoints}
+            title={t("trendTitle")}
+            subtitle={t("trendSubtitle")}
+            sinceLabel={t("trendSince")}
+          />
+        </div>
+      )}
 
       <div className="mt-10">
         <h2 className="text-lg font-semibold text-zinc-100">{t("tableTitle")}</h2>
